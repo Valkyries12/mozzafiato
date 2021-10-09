@@ -11,6 +11,12 @@ const javascriptRule = {
     exclude: /node_modules/
 };
 
+const imagesRule = {
+  test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
+  type: "asset/resource",
+  use: ["file-loader"],
+};
+
 module.exports = {
   output: {
     filename: "app.[contenthash].js"

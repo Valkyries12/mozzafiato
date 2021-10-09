@@ -75,7 +75,9 @@ body {
 }
 
 .main {
+    align-items: center;
     border: 1px solid pink;
+    display: flex;
     height: 100vh;
 }
 
@@ -86,4 +88,24 @@ body {
     font-size: 1rem;
     padding: .5rem;
     text-align: center;
+}
+
+
+/******************/
+/****** HOME ******/
+/******************/
+.home {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #222;
+    display: flex;
+    flex-direction: column;
+    height: 460px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.home p {
+    text-transform: capitalize;
+    font-size: 1.1rem;
 }
