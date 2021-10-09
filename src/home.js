@@ -1,16 +1,20 @@
 import cheffImage from "./assets/images/chef.png"
 
-export default createHome = () => {
+export default function createHome() {
   const div = document.createElement("div");
   div.setAttribute("class", "home");
   
-  const p1 = document.createElement("p").textContent = "best pizza in your country";
-  const p2 = document.createElement("p").textContent = "made with passion since 1908";
-  const p3 = document.createElement("p").textContent = "order online or visit us!";
+  const p1 = document.createElement("p");
+  p1.textContent = "best pizza in your country";
+  const p2 = document.createElement("p");
+  p2.textContent = "made with passion since 1908";
+  const p3 = document.createElement("p");
+  p3.textContent = "order online or visit us!";
 
   const figure = document.createElement("figure");
   figure.setAttribute("class", "cheff")
-  const img = document.createElement("img").src = cheffImage;
+  const img = new Image();
+  img.src = cheffImage;
 
   figure.appendChild(img);
 

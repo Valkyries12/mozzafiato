@@ -13,8 +13,7 @@ const javascriptRule = {
 
 const imagesRule = {
   test: /\.(png|svg|jpg|jpeg|gif|ico)$/i,
-  type: "asset/resource",
-  use: ["file-loader"],
+  type: "asset/resource"
 };
 
 module.exports = {
@@ -29,7 +28,7 @@ module.exports = {
   ],
   module: {
     rules: [
-        javascriptRule, cssRule
+        javascriptRule, cssRule, imagesRule
     ],
   },
 };

@@ -109,3 +109,15 @@ body {
     text-transform: capitalize;
     font-size: 1.1rem;
 }
+
+.home figure {
+    border: 1px solid blue;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.home img {
+    width: 100%;
+}
