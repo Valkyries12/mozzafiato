@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Salsiccia",
+        "ingredients": ["Tomato sauce", "Mozarella", "Tomato", "Homemade sausage", "Garlic", "Basil"],
+        "imageSrc": "./assets/images/pizzas/salsiccia.png"
+    },
+    {
+        "name": "Gamberi",
+        "ingredients": ["Tomato sauce", "Mozarella", "Shrimps", "Feta cheese", "Olives", "Basil"],
+        "imageSrc": "./assets/images/pizzas/gamberi.png"
+    },
+    {
+        "name": "Pepe",
+        "ingredients": ["Tomato sauce", "Mozarella", "Chilli flakes", "Olives", "Basil"],
+        "imageSrc": "./assets/images/pizzas/pepe.png"
+    },
+    {
+        "name": "Disgustoso",
+        "ingredients": ["Tomato sauce", "Bacon", "Pineapple", "Olives", "Basil"],
+        "imageSrc": "./assets/images/pizzas/disgustoso.png"
+    },
+    {
+        "name": "Colorato",
+        "ingredients": ["Tomato sauce", "Mozarella", "Onion", "Pepper", "Champignons", "Basil"],
+        "imageSrc": "./assets/images/pizzas/colorato.png"
+    },
+    {
+        "name": "Pomodoro",
+        "ingredients": ["Tomato sauce", "Mozarella", "Tomato", "Onion", "Feta cheese", "Chilli"],
+        "imageSrc": "./assets/images/pizzas/pomodoro.png"
+    },
+    {
+        "name": "Crema",
+        "ingredients": ["White sauce", "Mozarella", "Shrimps", "Salmon", "Pineapple", "Olives", "Basil"],
+        "imageSrc": "./assets/images/pizzas/crema.png"
+    },
+    {
+        "name": "Carne",
+        "ingredients": ["Tomato sauce", "Mozarella", "Homemade sausage", "Bacon", "Garlic", "Pepper", "Chilli"],
+        "imageSrc": "./assets/images/pizzas/carne.png"
+    }
+]
