@@ -3,9 +3,10 @@ function createCard(item) {
   const card = document.createElement("div");
   card.setAttribute("class", "card-pizza");
   //creo la img
-  const img = document.createElement("img");
-  img.setAttribute("src", item.imageSrc);
-  img.setAttribute("alt", item.name);
+  const img = new Image();
+  //const imgurl = require(item.imageSrc);
+  img.src = loadImage(item.name);
+  img.alt = item.name;
   //creo titulo
   const titulo = document.createElement("p");
   titulo.setAttribute("class", "pizza-name");
@@ -21,6 +22,11 @@ function createCard(item) {
   return card
 };
 
+function loadImage(name) {
+  return require(`./assets/images/pizzas/${name.toLowerCase()}.png`);
+};
+
+//var icon = loadIcon();
 export default function createMenu(data) {
   //creo div .menu
   const menu = document.createElement("div");

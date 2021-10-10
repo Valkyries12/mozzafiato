@@ -1,7 +1,8 @@
 import createWebsite from "./website.js";
 import createHome from "./home.js";
 import createMenu from "./menu.js";
-import data from "./data.json";
+import data from "./assets/data.json";
+
 
 import "./styles.css";
 

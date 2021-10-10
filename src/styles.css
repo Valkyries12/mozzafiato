@@ -132,6 +132,7 @@ body {
     border: 1px solid #222;
     display: grid;
     grid-template-columns: 1fr;
+    justify-content: center;
     padding: 2rem;
     width: 100%;
 }
@@ -152,6 +153,7 @@ body {
 .card-pizza:hover {
     background-color: rgba(99, 99, 99, 0.4);
 }
+
 
 .pizza-name {
     font-size: 1.5rem;
