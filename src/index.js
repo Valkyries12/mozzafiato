@@ -2,14 +2,14 @@ import createWebsite from "./website.js";
 import createHome from "./home.js";
 import createMenu from "./menu.js";
 import createContact from "./contact.js";
-import data from "./assets/data.json";
+//import data from "./assets/data.json";
 
 
 import "./styles.css";
 
 function initializeApp() {
     createWebsite();
-    createContactSection();
+    createHomeSection();
 };
 
 initializeApp();
@@ -35,9 +35,19 @@ function createContactSection() {
     main.appendChild(contactTab);
 };
   
-document.querySelector("#btnHome").addEventListener("click", createHomeSection);
 
-document.querySelector("#btnMenu").addEventListener("click", () => createMenuSection(data));
+const changeTabs = function(e, data) {
+    if(e.target.id == "btnHome") {
+        createHomeSection();
+    };
+    if(e.target.id == "btnMenu") {
+        createMenuSection(data);
+    };
+    if(e.target.id == "btnContact") {
+        createContactSection();
+    };
+};
 
-document.querySelector("#btnContact").addEventListener("click", () => createContactSection);
-
+document.querySelector(".nav").addEventListener("click", function(e,data) {
+    changeTabs(e, require("./assets/data.json"));
+});
