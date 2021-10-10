@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+//const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 const cssRule = {
     test: /\.css$/,
@@ -20,15 +21,16 @@ module.exports = {
   output: {
     filename: "app.[contenthash].js"
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "src/index.html",
-      title: "Mozzafiato"
-    }),
-  ],
   module: {
     rules: [
         javascriptRule, cssRule, imagesRule
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "src/index.html",
+      title: "Mozzafiato"
+    }),
+    
+  ],
 };
