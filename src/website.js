@@ -42,8 +42,6 @@ export default function createWebsite() {
   root.appendChild(header);
   root.appendChild(main);
   root.appendChild(footer);
-
-  //createHomeSection();
 };
 
 
