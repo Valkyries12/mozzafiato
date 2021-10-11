@@ -6,4 +6,4 @@ In this project I learn
 - Use Javascript modules and inject js files dinamically into  html.
 
 ---
-[live preview :point_left:](https://valkyries12.github.io/restaurant_page/)
+[live preview :point_left:](https://valkyries12.github.io/mozzafiato/)
